@@ -1,0 +1,18 @@
+.app {
+    text-align: center;
+}
+
+.newHobbyButton {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: black;
+    background-color: #DBD053;
+    padding: 10px 75px;
+    border: none;
+    border-radius: 25px;
+}
+
+.newHobbyButton:hover {
+    background-color: #C89933;
+    cursor: pointer;
+}
