@@ -6,6 +6,7 @@ import HobbyView from "./HobbyView";
 
 function App() {
   const [hobby, setHobby] = useState();
+  const [wikiLink, setWikiLink] = useState();
 
   const handleButtonClicked = (event) => {
     const options = {
@@ -24,14 +25,21 @@ function App() {
       .then((response) => {
         console.log(response);
         setHobby(response.hobby);
+        setWikiLink(response.link);
       })
       .catch((err) => console.error(err));
   };
 
   return (
     <div className={styles.app}>
-      <HobbyView hobby={hobby} />
-      <Button image="arrows-rotate.svg" style={{backgroundColor: "#C89933"}} onClick={handleButtonClicked}>Get new hobby</Button>
+      <HobbyView hobby={hobby} wikiLink={wikiLink} />
+      <Button
+        image='arrows-rotate.svg'
+        style={{ backgroundColor: "#C89933" }}
+        onClick={handleButtonClicked}
+      >
+        Get new hobby
+      </Button>
       <Footer />
     </div>
   );
