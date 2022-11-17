@@ -1,0 +1,19 @@
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 25px ;
+}
+
+.footer img {
+    width: 32px;
+}
+
+.footer p {
+    color: white
+}
+
+.footer a {
+    color: rgb(112, 112, 249);
+    text-decoration: none;
+}

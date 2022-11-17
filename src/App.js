@@ -1,6 +1,7 @@
 import { useState } from "react";
 import styles from "./App.module.css";
 import Button from "./Button";
+import Footer from "./Footer";
 import HobbyView from "./HobbyView";
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
     <div className={styles.app}>
       <HobbyView hobby={hobby} />
       <Button image="arrows-rotate.svg" style={{backgroundColor: "#C89933"}} onClick={handleButtonClicked}>Get new hobby</Button>
+      <Footer />
     </div>
   );
 }

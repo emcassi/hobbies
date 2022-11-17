@@ -2,7 +2,7 @@
     height: 50px;
     font-size: .6rem;
     font-weight: 700;
-    margin: auto;
+    margin: 10px auto;
     padding: 10px 25px;
     border: none;
     border-radius: 25px;
@@ -21,4 +21,33 @@
 
 .button:hover {
     background-color: gray;
+}
+
+@media screen and (max-width: 565px) {
+    .button p {
+        font-size: 0.8rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .button {
+        width: max-content;
+    }
+    
+    .button img {
+        width: 18px;
+        margin-right: 5px;
+    }
+    
+    .button p {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (max-width: 350px) {
+
+    .button {
+        padding: 10px 5px;
+    }
 }
